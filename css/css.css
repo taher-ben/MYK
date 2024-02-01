@@ -1,6 +1,39 @@
 /* start global rules  */
-body{
+:root{
+    --main-color: rgb(100, 131, 255);
+}
+*{
+    box-sizing: border-box;
     font-family: 'Almarai', sans-serif;
+}
+body{
     direction: rtl;
 }
 /* end global rules  */
+/* start form  */
+.form form div{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a5a5a5;
+}
+.form form div i{
+    color:var(--main-color);
+    margin: auto 0;
+    font-size: 13px;
+}
+.form form div input,.form form div input:focus{
+    outline: none;
+    border: none;
+}
+.form form div input::placeholder{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.form form button{
+    border-radius: 15px;
+    border: 1px solid #a5a5a5;
+    padding: 5px 15px;
+    background-color: transparent;
+    margin: 10px 0;
+}
+/* end  form  */
