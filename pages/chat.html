@@ -28,6 +28,12 @@
     <div id="app" class="d-flex body-for-chat">
         <div class="d-flex">
             <nav class=" ">
+                <div class="search-container">
+                    <div class="search-input">
+                        <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                      <input type="text" placeholder="بحث...">
+                    </div>
+                  </div>
                 <div class="icons-holders">
                     <a href="#">
                         <div class="box">
@@ -240,12 +246,6 @@
     </div>
     <!-- <script src="../js.js"></script> -->
     <script>
-        // let nav = document.querySelector('nav');
-        // let chat  = document.querySelector('.chat-container');
-        // let widthfornav = nav.style.width;
-        // console.log(nav.style.width);
-        // chat.style.width = '100vw' - widthfornav;
-
         function setHeight() {
             var textarea = document.getElementById('message');
             textarea.style.height = 'auto'; 
