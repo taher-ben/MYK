@@ -1,51 +1,61 @@
 /* start global rules  */
-:root{
+:root {
     --main-color: rgb(100, 131, 255);
 }
-*{
+
+* {
     box-sizing: border-box;
     font-family: 'Almarai', sans-serif;
 }
-body{
+
+body {
     direction: rtl;
 }
+
 /* end global rules  */
 /* start form  */
 .form {
     position: relative;
-    
+
     height: 100vh;
 }
-.form .container{
+
+.form .container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     border-radius: 5px;
-     padding: 10px;
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 10px;
 }
-.form form div{
+
+.form form div {
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #a5a5a5;
     padding-left: 90px;
 }
-.form form div i{
-    color:var(--main-color);
+
+.form form div i {
+    color: var(--main-color);
     margin: auto 0;
     font-size: 13px;
 }
-.form form div input,.form form div input:focus{
+
+.form form div input,
+.form form div input:focus {
     outline: none;
     border: none;
 }
-.form form div input::placeholder{
+
+.form form div input::placeholder {
     margin-bottom: 10px;
     font-size: 12px;
 }
-.form form button{
+
+.form form button {
     color: #fff;
     background-color: var(--main-color);
     border-radius: 5px;
@@ -53,36 +63,43 @@ body{
     padding: 5px 15px;
     margin: 10px 0;
 }
+
 /* end  form  */
 /* strat login */
 .login {
     position: relative;
-    
+
     height: 100vh;
 }
-.login .container{
+
+.login .container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     border-radius: 5px;
-     padding: 10px;
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 10px;
 }
-.login .container #loginForm div{
+
+.login .container #loginForm div {
     padding-bottom: 5px;
-    margin-top:20px ;
+    margin-top: 20px;
     border-bottom: 1px solid #a5a5a5;
 }
-.login .container i{
+
+.login .container i {
     color: var(--main-color);
 }
-.login .container input,.login .container input:focus{
+
+.login .container input,
+.login .container input:focus {
     outline: none;
     border: none;
 }
-.login button{
+
+.login button {
     color: #fff;
     background-color: var(--main-color);
     border-radius: 5px;
@@ -90,80 +107,85 @@ body{
     padding: 5px 15px;
     margin: 50px 0 0;
 }
+
 /* end login */
 /* start chat  */
 
 nav {
     overflow-y: scroll;
-    padding: 30px 0 0 ;
+    padding: 30px 0 0;
 }
 
 .chat-main {
-    overflow: auto; 
+    overflow: auto;
 }
 
 
-.body-for-chat{
-    max-height:100vh;
+.body-for-chat {
+    max-height: 100vh;
     max-width: 100vw;
     height: 100%;
     width: 100%;
 }
-nav{
+
+nav {
     overflow-y: scroll;
     top: 0px;
     right: 0px;
-    width: 300px;
+    width: 325px;
     max-height: 100vh;
     height: 100%;
     background-color: #f7f7f7;
 }
 
 nav .search-container {
-    margin:10px 0 10px;
-  }
-  
- nav .search-input {
+    margin: 10px 0 10px;
+}
+
+nav .search-input {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-nav  .search-input input[type="text"] {
+}
+
+nav .search-input input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
     outline: none;
     border-radius: 5px 0 0 5px;
     width: 200px;
-  }
-  
-nav  .search-input button[type="submit"] {
+}
+
+nav .search-input button[type="submit"] {
     padding: 10px;
     background-color: #007bff;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     color: #fff;
-  }
-  
- nav .search-input button[type="submit"]:hover {
+}
+
+nav .search-input button[type="submit"]:hover {
     background-color: var(--main-color);
-  }
-  
+}
+
 nav::-webkit-scrollbar {
     display: none;
 }
-nav .icons-holders{
+
+nav .icons-holders {
     margin: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
-nav .icons-holders a{
+
+nav .icons-holders a {
     text-decoration: none;
 }
-nav .icons-holders .box{
+
+nav .icons-holders .box {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -171,7 +193,8 @@ nav .icons-holders .box{
     padding: 10px 5px;
     z-index: 10;
 }
-nav .icons-holders .box:before{
+
+nav .icons-holders .box:before {
     content: '';
     position: absolute;
     left: 50%;
@@ -179,82 +202,113 @@ nav .icons-holders .box:before{
     transform: translate(-50%, -50%);
     background-color: #ebebeb;
     z-index: -1;
-    width:0 ;
+    width: 0;
     height: 0;
     transition: 0.3s;
 }
-nav .icons-holders .box:hover::before{
+
+nav .icons-holders .box:hover::before {
     width: 100%;
     height: 100%;
 }
-nav .icons-holders .box .image{
+
+nav .icons-holders .box .image {
     max-width: 40px;
     padding-left: 10px;
 }
-nav .icons-holders .box .image img{
+
+nav .icons-holders .box .image img {
     width: 100%;
 }
-nav .icons-holders .box h6{
+
+nav .icons-holders .box h6 {
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
-nav .icons-holders .box p{
+
+nav .icons-holders .box p {
     color: rgb(85, 85, 85);
     font-size: 12px;
 }
-/* end chat  */
-.chat-main{
+
+.backgroun-image {
+    position: relative;
+}
+
+.backgroun-image::before {
+    content: '';
+    background-image: url(../media/patren2.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+
+}
+
+.chat-main {
+    z-index: 1;
+    position: relative;
     padding: 10px 0;
     height: 100%;
     min-height: 100vh;
-    min-width: calc(100vw  - 350px);
+    min-width: calc(100vw - 350x - 220px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 
 .chat-container {
     overflow-y: scroll;
     height: 100%;
     max-height: calc(100vh - 100px);
 }
+
 .chat-container::-webkit-scrollbar {
     display: none;
 }
-.chat-container .chat-live .box{
+
+.chat-container .chat-live .box {
     display: flex;
     align-items: flex-end;
     max-width: 200px;
     margin: 20px 0;
 }
 
-.chat-container .chat-live .box img{
+.chat-container .chat-live .box img {
     border: 3px solid #a5a5a5;
     border-radius: 25px;
     margin: 0 10px;
     width: 50px;
 }
-.chat-container .chat-live .box .text{
+
+.chat-container .chat-live .box .text {
     border-radius: 5px;
     padding: 5px 7px 0;
     background-color: #eeeeee;
 }
-.chat-container .chat-live .box h5{
+
+.chat-container .chat-live .box h5 {
     font-size: 15px;
     font-weight: bold;
 }
-.chat-bar{
-    width:calc( 100vw - 350px);
+
+.chat-bar {
+    width: calc(100vw - 350px - 220px);
 }
-.chat-bar .box{
+
+.chat-bar .box {
     display: flex;
     width: 100%;
     align-items: center;
-    /* margin-bottom: 10px; */
 }
-.chat-bar button{
+
+.chat-bar button {
     height: max-content;
-    margin:0 3px;
+    margin: 0 3px;
     padding: 10px 20px;
     background-color: var(--main-color);
     color: white;
@@ -262,14 +316,41 @@ nav .icons-holders .box p{
     border-radius: 20px;
     cursor: pointer;
 }
-.chat-bar .box textarea{
+
+.chat-bar .box textarea {
     padding: 10px 10px 0;
     border: 1px solid #ccc;
-    border-radius: 20px; 
-    width: 80%;
+    border-radius: 20px;
+    width: 100%;
     margin-right: 10px;
     outline: none;
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
     resize: none;
     overflow: hidden;
 }
+
+/* start account setting */
+.account{
+    
+    width: 220px;
+}
+.account div {
+   display: flex;
+   justify-content: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.account ul li{
+    padding: 15px 0 10px;
+    list-style: none;
+    border-bottom: 1px solid #eee;
+}
+.account ul li a{
+    text-decoration: none;
+}
+.account ul li i{
+    padding: 0 4px;
+}
+/* end account setting */
+
+/* end chat  */

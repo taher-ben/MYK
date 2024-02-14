@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,16 +24,16 @@
 
 </head>
 
-<body >
+<body>
     <div id="app" class="d-flex body-for-chat">
         <div class="d-flex">
             <nav class=" ">
                 <div class="search-container">
                     <div class="search-input">
                         <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-                      <input type="text" placeholder="بحث...">
+                        <input type="text" placeholder="بحث...">
                     </div>
-                  </div>
+                </div>
                 <div class="icons-holders">
                     <a href="#">
                         <div class="box">
@@ -187,60 +187,99 @@
                     </a>
                 </div>
             </nav>
-            <div class=" chat-main">
-                <div class="chat-container">
-                    <div class="chat-live">
-                        <div class="box">
-                            <img src="../media/prson.png" alt="">
-                            <div class="text">
-                                <h5> Ahmed Ali </h5>
-                                <p> اهلا بيكم جميعا </p>
+            <div class="backgroun-image">
+                <div class=" chat-main">
+                    <div class="chat-container">
+                        <div class="chat-live">
+                            <div class="box">
+                                <img src="../media/prson.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="../media/person2.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="../media/person3.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="../media/person4.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="../media/person2.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="../media/person3.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="../media/person4.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="../media/person2.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="../media/person3.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="../media/person4.png" alt="">
+                                <div class="text">
+                                    <h5> Ahmed Ali </h5>
+                                    <p> اهلا بيكم جميعا </p>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="chat-bar ">
                         <div class="box">
-                            <img src="../media/prson.png" alt="">
-                            <div class="text">
-                                <h5> Ahmed Ali </h5>
-                                <p> اهلا بيكم جميعا </p>
-                            </div>
+                            <textarea id="message" placeholder="أكتب رسالتك "></textarea>
+                            <button onclick="sendMessage()">ارسال</button>
                         </div>
-                        <div class="box">
-                            <img src="../media/prson.png" alt="">
-                            <div class="text">
-                                <h5> Ahmed Ali </h5>
-                                <p> اهلا بيكم جميعا </p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <img src="../media/prson.png" alt="">
-                            <div class="text">
-                                <h5> Ahmed Ali </h5>
-                                <p> اهلا بيكم جميعا </p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <img src="../media/prson.png" alt="">
-                            <div class="text">
-                                <h5> Ahmed Ali </h5>
-                                <p> اهلا بيكم جميعا </p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <img src="../media/prson.png" alt="">
-                            <div class="text">
-                                <h5> Ahmed Ali </h5>
-                                <p> اهلا بيكم جميعا </p>
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
-                <div class="chat-bar ">
-                    <div class="box">
-                        <textarea id="message" placeholder="أكتب رسالتك "></textarea>
-                        <button onclick="sendMessage()">ارسال</button>
-                    </div>
+            </div>
+            <div class="account">
+                <div>
+                    <img src="../media/person3.png" alt="">
                 </div>
+                <ul>
+                    <li> <i class="fa-solid fa-plus"></i><a href="#">انشاء موضوع </a>  </li>
+                    <!-- <li> <i class="fa-solid fa-gear"></i><a href="#">أعدادات الحساب</a></li> -->
+                    <li> <i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">تسجيل الخروج</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -248,14 +287,14 @@
     <script>
         function setHeight() {
             var textarea = document.getElementById('message');
-            textarea.style.height = 'auto'; 
-            textarea.style.height = textarea.scrollHeight + 'px'; 
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
         }
         function sendMessage() {
             var message = document.getElementById('message').value;
         }
         document.getElementById('message').addEventListener('input', setHeight);
-        
+
         window.addEventListener('load', setHeight);
     </script>
     <script src="../js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site icon -->
+    <link rel="icon" type="../image/x-icon" href="">
+    <title>فائدة</title>
+    <!-- sytle sheet  -->
+    <link rel="stylesheet" href="../css/create.css">
+    <!-- bootstrap files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- normalize file -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Changa:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="create-chat" class="">
+
+        <div class="subject">
+            <div class="image">
+                <img src="../media/mian-logo.jpg" alt="">
+            </div>
+            <div class="form">
+                <div class="count">
+                    <div>
+                        <label for="title">عنوان الموضوع</label>
+                        <input id="title" name="title" type="text">
+                    </div>
+                    <div>
+                        <label for="description">وصف للموضوع</label>
+                        <input id="description" name="description" type="text">
+                    </div>
+                    <div>
+                        <button type="submit"> أنشاء </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="account">
+            <div>
+                <img src="../media/person3.png" alt="">
+            </div>
+            <ul>
+                <li> <i class="fa-solid fa-plus"></i><a href="#">انشاء موضوع </a> </li>
+                <!-- <li> <i class="fa-solid fa-gear"></i><a href="#">أعدادات الحساب</a></li> -->
+                <li> <i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">تسجيل الخروج</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- <script src="../js.js"></script> -->
+    <script>
+        function setHeight() {
+            var textarea = document.getElementById('message');
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+        function sendMessage() {
+            var message = document.getElementById('message').value;
+        }
+        document.getElementById('message').addEventListener('input', setHeight);
+
+        window.addEventListener('load', setHeight);
+    </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

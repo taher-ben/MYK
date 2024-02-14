@@ -1,0 +1,98 @@
+/* start global rules  */
+:root {
+    --main-color: rgb(100, 131, 255);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+}
+
+body {
+    direction: rtl;
+}
+
+/* end global rules  */
+#create-chat {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+#create-chat .subject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#create-chat .form {
+    width: calc(100vw - 220px); 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#create-chat .form .count {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    padding: 35px 45px;
+    border-radius: 10px;
+}
+#create-chat .form .count div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 ;
+}
+#create-chat .form .count label{
+    margin-bottom:10px ;
+    font-weight: bold;
+    color: black;
+}
+#create-chat .form .count input {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+#create-chat .form .count input:focus {
+    outline-color: var(--main-color);
+}
+
+#create-chat .form .count button{
+    background-color: transparent;
+    margin: 10px 0 0;
+    padding: 7px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    transition: 0.2s;
+}
+#create-chat .form .count button:hover{
+    color: white;
+    border-color: none;
+    background-color: var(--main-color);
+}
+/* start account setting */
+.account{
+    background-color: #eee;
+    width: 220px;
+}
+.account div {
+   display: flex;
+   justify-content: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.account ul li{
+    padding: 15px 0 10px;
+    list-style: none;
+    border-bottom: 1px solid #ffffff;
+}
+.account ul li a{
+    text-decoration: none;
+}
+.account ul li i{
+    padding: 0 4px;
+}
+/* end account setting */
